@@ -45,4 +45,19 @@ class Quiz_brain {
   {
     return _ques[_num].ans;
   }
+  bool isFinished()
+  {
+    if(_num>=_ques.length-1) {
+      return true;
+      print("Truee");
+    }
+    else
+      return false;
+  }
+  void reset()
+  {
+    if(isFinished())
+      _num=0;
+  }
+
 }
